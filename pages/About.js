@@ -1,6 +1,5 @@
 import Image from "next/image";
-import TeamCard from "../components/TeamCard";
-import ProductCard from "../components/ProductCard";
+
 
 function About() {
   return (

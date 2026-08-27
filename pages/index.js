@@ -1,6 +1,5 @@
 import Link from "next/link";
 import NightMode from "../components/NightMode";
-import ProductCard from "../components/ProductCard";
 
 function Home() {
   return (
