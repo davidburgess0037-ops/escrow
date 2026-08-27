@@ -102,19 +102,11 @@ function Contact(){
                 
                 <Image className='' src='/images/phone.svg' width={50} height={50} alt='phone'/>
                 <h1 className='text-sm font-monteserat'>Phone Number</h1>
-                <p className='text-sm font-popins'>(+234) 908-260-3201</p>
+                <p className='text-sm font-popins'>(+1) 82-2647-474</p>
 
                 </div>
 
-                <div className='flex justify-center items-center flex-col'>
-                
-                <Image className=''  src='/images/office.svg' width={50} height={50} alt='office'/>
-                <h1 className=' text-sm font-monteserat'>Head office</h1>
-                <p className='text-sm font-popins'>First floor, Sky Blue Building beside Beam clinic,
-                         Along Aso B Mararaba Road, Nasarawa State</p>
-
-
-                </div>
+             
 
 
                 <div className='flex justify-center items-center flex-col'>
@@ -122,7 +114,7 @@ function Contact(){
                 <Image className='' src='/images/email.svg' width={50} height={50} alt='email'/>
 
                 <h1 className='text-sm font-monteserat'>Email address</h1>
-                <p className='text-sm font-popins'>Info@adain.ng</p>
+                <p className='text-sm font-popins'>Info@escrow.ng</p>
 
 
                 </div>
