@@ -29,7 +29,7 @@ function AdainNavBar() {
               className="flex items-center"
             >
               <span className="text-lg font-bold tracking-wide text-adainblack">
-                Escrow
+                Escrow Wave
                 <span className="text-adainyellow">
                   Bank
                 </span>

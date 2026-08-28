@@ -34,14 +34,14 @@ function Home() {
 
             <div className="mt-8 flex flex-col gap-4 sm:flex-row">
               <Link
-                href="/Job"
+                href="/SignIn"
                 className="w-fit rounded-lg bg-adainyellow px-6 py-3 font-bold text-white transition hover:opacity-90"
               >
                 Get Started
               </Link>
 
               <Link
-                href="#how-it-works"
+                href="/about"
                 className="w-fit rounded-lg border border-gray-300 px-6 py-3 font-semibold transition hover:bg-gray-100 dark:border-gray-700 dark:hover:bg-gray-800"
               >
                 How It Works
