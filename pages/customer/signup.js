@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { useRouter } from "next/router";
 
@@ -13,7 +14,7 @@ function SignUp() {
   const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState(false);
 
-  const handleSignUp = async () => {
+  const handleSignUp = async (e) => {
     e.preventDefault();
 
     setError("");
@@ -34,7 +35,7 @@ function SignUp() {
 
     try {
       // Demo signup
-      // Replace this with your API request later.
+      // Replace this with your backend API request later.
 
       localStorage.setItem("isAuthenticated", "true");
       localStorage.setItem("userEmail", email);
@@ -50,7 +51,8 @@ function SignUp() {
   };
 
   const handleContinue = async () => {
-    //await router.push("/dashboard");
+    setSuccess(false);
+    await router.push("/SignIn");
   };
 
   return (
@@ -71,6 +73,7 @@ function SignUp() {
         {/* Signup Card */}
         <div className="rounded-2xl bg-white p-8 shadow-xl dark:bg-gray-900">
 
+          {/* Header */}
           <div className="mb-6">
             <h2 className="text-2xl font-bold text-gray-900 dark:text-white">
               Create Account
@@ -81,6 +84,7 @@ function SignUp() {
             </p>
           </div>
 
+          {/* Signup Form */}
           <form onSubmit={handleSignUp}>
 
             {/* Full Name */}
@@ -167,7 +171,7 @@ function SignUp() {
               />
             </div>
 
-            {/* Error */}
+            {/* Error Message */}
             {error && (
               <div className="mb-5 rounded-lg bg-red-50 px-4 py-3 text-sm text-red-600 dark:bg-red-950/30 dark:text-red-400">
                 {error}
@@ -188,6 +192,7 @@ function SignUp() {
           <div className="mt-6 text-center">
             <p className="text-sm text-gray-600 dark:text-gray-400">
               Already have an account?{" "}
+
               <button
                 type="button"
                 onClick={() => router.push("/SignIn")}
@@ -205,15 +210,20 @@ function SignUp() {
         </p>
       </div>
 
+      {/* ============================= */}
       {/* SUCCESS POPUP */}
+      {/* ============================= */}
+
       {success && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 px-4 backdrop-blur-sm">
+        <div className="fixed inset-0 z-[9999] flex items-center justify-center bg-black/60 px-4 backdrop-blur-sm">
+
           <div className="w-full max-w-sm rounded-2xl bg-white p-8 text-center shadow-2xl dark:bg-gray-900">
 
             {/* Success Icon */}
             <div className="mx-auto mb-5 flex h-16 w-16 items-center justify-center rounded-full bg-green-100 dark:bg-green-900/30">
+
               <svg
-                className="h-8 w-8 text-green-600 dark:text-green-400"
+                className="h-9 w-9 text-green-600 dark:text-green-400"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -225,25 +235,35 @@ function SignUp() {
                   d="M5 13l4 4L19 7"
                 />
               </svg>
+
             </div>
 
-            {/* Success Message */}
+            {/* Success Title */}
             <h2 className="text-2xl font-bold text-gray-900 dark:text-white">
-              Account Creation failed!
+              Account Created Successfully!
             </h2>
 
-            <p className="mt-3 text-sm text-gray-600 dark:text-gray-400">
-              {fullName}.
-              There was an error creating your account please contact customer support to complete account creation.
+            {/* Success Message */}
+            <p className="mt-3 text-sm leading-6 text-gray-600 dark:text-gray-400">
+              Welcome,{" "}
+              <span className="font-semibold">
+                {fullName}
+              </span>
+              .
+              <br />
+              Your Escrow Bank account has been created successfully. contact admin to active your account.
+              escrowave@gmail.com
             </p>
 
             {/* Continue Button */}
             <button
+              type="button"
               onClick={handleContinue}
               className="mt-6 w-full rounded-lg bg-adainyellow px-4 py-3 font-bold text-white transition hover:opacity-90"
             >
-              Continue to Dashboard
+              Continue
             </button>
+
           </div>
         </div>
       )}
@@ -252,3 +272,4 @@ function SignUp() {
 }
 
 export default SignUp;
+
