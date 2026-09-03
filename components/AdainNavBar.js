@@ -61,10 +61,10 @@ function AdainNavBar() {
               </Link>
 
               <Link
-                href="/SignIn"
+                href="/customer/signup"
                 className="rounded-lg bg-adainyellow px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition hover:bg-orange-600"
               >
-                Sign in
+                Sign up
               </Link>
 
             </div>

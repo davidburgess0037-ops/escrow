@@ -28,7 +28,7 @@ function SignIn() {
       localStorage.setItem("userEmail", email);
 
       // Navigate to dashboard
-      await router.push("/dashboard");
+      //await router.push("/dashboard");
     } else {
       setError("Invalid email or password.");
     }
@@ -125,7 +125,7 @@ function SignIn() {
           </form>
 
           {/* Demo Credentials */}
-          <div className="mt-6 rounded-lg bg-gray-50 p-4 dark:bg-gray-800">
+          {/* <div className="mt-6 rounded-lg bg-gray-50 p-4 dark:bg-gray-800">
             <p className="text-center text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-gray-400">
               Demo Credentials
             </p>
@@ -145,7 +145,7 @@ function SignIn() {
                 </span>
               </p>
             </div>
-          </div>
+          </div> */}
 
         </div>
 

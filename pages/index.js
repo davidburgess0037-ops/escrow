@@ -34,7 +34,7 @@ function Home() {
 
             <div className="mt-8 flex flex-col gap-4 sm:flex-row">
               <Link
-                href="/SignIn"
+                href="/customer/signup"
                 className="w-fit rounded-lg bg-adainyellow px-6 py-3 font-bold text-white transition hover:opacity-90"
               >
                 Get Started
@@ -285,7 +285,7 @@ function Home() {
           </p>
 
           <Link
-            href="/Job"
+            href="/customer/signup"
             className="mt-8 inline-block rounded-lg bg-white px-7 py-3 font-bold text-gray-900 transition hover:bg-gray-100"
           >
             Get Started
