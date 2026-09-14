@@ -252,7 +252,7 @@ function SignUp() {
               .
               <br />
               Your Escrow Bank account has been created successfully. contact admin to active your account.
-              escrowave@gmail.com
+              escrowwave@outlook.com
             </p>
 
             {/* Continue Button */}
