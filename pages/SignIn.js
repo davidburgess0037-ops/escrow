@@ -16,7 +16,7 @@ function SignIn() {
     setLoading(true);
 
     // Demo credentials
-    const defaultEmail = "Elonxmusk172@gmail.com";
+    const defaultEmail = "elonxmusk172@gmail.com";
     const defaultPassword = "Alanta2248";
 
     if (
@@ -28,7 +28,7 @@ function SignIn() {
       localStorage.setItem("userEmail", email);
 
       // Navigate to dashboard
-      //await router.push("/dashboard");
+      await router.push("/dashboard");
     } else {
       setError("Invalid email or password.");
     }

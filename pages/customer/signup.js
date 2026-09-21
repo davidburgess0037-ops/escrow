@@ -261,7 +261,8 @@ function SignUp() {
               onClick={handleContinue}
               className="mt-6 w-full rounded-lg bg-adainyellow px-4 py-3 font-bold text-white transition hover:opacity-90"
             >
-              Continue
+              
+              <a href="mailto:escrowwave@outlook.com">Contact Admin</a>
             </button>
 
           </div>
