@@ -69,9 +69,9 @@ function Dashboard() {
   }, [router]);
 
   const formatMoney = (amount) => {
-    return new Intl.NumberFormat("en-NG", {
+    return new Intl.NumberFormat("en-US", {
       style: "currency",
-      currency: "NGN",
+      currency: "USD",
       maximumFractionDigits: 0,
     }).format(amount);
   };
@@ -714,7 +714,7 @@ function Dashboard() {
                 <div className="relative">
 
                   <span className="absolute left-4 top-1/2 -translate-y-1/2 font-bold text-gray-500">
-                    ₦
+                    $
                   </span>
 
                   <input
