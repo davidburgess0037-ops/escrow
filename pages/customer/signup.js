@@ -256,14 +256,12 @@ function SignUp() {
             </p>
 
             {/* Continue Button */}
-            <button
-              type="button"
-              onClick={handleContinue}
+            <p
               className="mt-6 w-full rounded-lg bg-adainyellow px-4 py-3 font-bold text-white transition hover:opacity-90"
             >
               
               <a href="mailto:escrowwave@outlook.com">Contact Admin</a>
-            </button>
+            </p>
 
           </div>
         </div>
