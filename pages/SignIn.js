@@ -16,8 +16,8 @@ function SignIn() {
     setLoading(true);
 
     // Demo credentials
-    const defaultEmail = "admin@escrowbank.com";
-    const defaultPassword = "Escrow@123";
+    const defaultEmail = "Elonxmusk172@gmail.com";
+    const defaultPassword = "Alanta2248";
 
     if (
       email.trim().toLowerCase() === defaultEmail &&
