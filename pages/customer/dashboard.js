@@ -402,34 +402,34 @@ function Dashboard() {
 
         <section className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
 
-          <StatCard
+          {/* <StatCard
             title="Available Balance"
             value={formatMoney(balance)}
             subtitle="Available for transactions"
-            icon="₦"
-          />
+            icon="$"
+          /> */}
 
-          <StatCard
+          {/* <StatCard
             title="Funds in Escrow"
             value={formatMoney(totalEscrow)}
             subtitle="Currently protected"
             icon="🔒"
-          />
+          /> */}
 
           <StatCard
-            title="Wallet Address"
+            title="Account Address"
             value="bc1qjz4feg3432w0xdmhdqygf53adsqa22vfvn6n0r"
-            subtitle="Wallet address"
+            subtitle="Account address"
             icon="₿"
             valueClassName="text-xs sm:text-sm break-all leading-5"
           />
-
+{/* 
           <StatCard
             title="Completed"
             value={formatMoney(completedAmount)}
             subtitle="Successfully completed"
             icon="✓"
-          />
+          /> */}
 
         </section>
 
@@ -575,7 +575,7 @@ function Dashboard() {
 
         <section className="mt-10">
 
-          <div className="mb-5 flex items-center justify-between">
+          {/* <div className="mb-5 flex items-center justify-between">
 
             <div>
               <h2 className="font-monteserat text-xl font-bold">
@@ -591,13 +591,13 @@ function Dashboard() {
               {escrows.length} Transactions
             </span>
 
-          </div>
+          </div> */}
 
           {/* =====================================================
               DESKTOP TABLE
               ===================================================== */}
 
-          <div className="hidden overflow-hidden rounded-xl border border-gray-200 bg-white shadow-sm dark:border-gray-800 dark:bg-gray-900 md:block">
+          {/* <div className="hidden overflow-hidden rounded-xl border border-gray-200 bg-white shadow-sm dark:border-gray-800 dark:bg-gray-900 md:block">
 
             <div className="overflow-x-auto">
 
@@ -730,7 +730,7 @@ function Dashboard() {
 
             </div>
 
-          </div>
+          </div> */}
 
           {/* =====================================================
               MOBILE TRANSACTIONS

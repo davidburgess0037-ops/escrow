@@ -278,7 +278,7 @@ function Dashboard() {
             title="Available Balance"
             value={formatMoney(2500000)}
             subtitle="Available for transactions"
-            icon="₦"
+            icon="$"
           />
 
           <StatCard

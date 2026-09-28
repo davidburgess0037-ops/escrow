@@ -14,7 +14,7 @@ const AdainFooter = () => {
             <ul className='flex flex-row justify-center gap-10 mt-4'>
           <li className="hover:ml-[-10px] duration-300 text-adainyellow">
             <a
-              href="https://www.facebook.com/profile.php?id=100091835923247"
+              href=""
             >
                <FaFacebook size={30} />
             </a>
@@ -22,14 +22,14 @@ const AdainFooter = () => {
           <li className="hover:ml-[-10px] duration-300 text-adainyellow">
             <a
               
-              href="https://www.instagram.com/quickmed_ng/?igshid=NTc4MTIwNjQ2YQ%3D%3D"
+              href=""
             >
               <FaInstagram size={30} />
             </a>
           </li>
           <li className="hover:ml-[-10px] duration-300 text-adainyellow">
             <a
-              href="https://twitter.com/QuickmedNG?s=09"
+              href=""
             >
               <FaTwitter size={30} />
             </a>
